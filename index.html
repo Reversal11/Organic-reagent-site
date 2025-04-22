@@ -2,117 +2,76 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Organic Chemistry Reagents for COMEDK</title>
+  <title>Organic Chemistry Reagents - COMEDK</title>
   <style>
     body {
       font-family: Arial, sans-serif;
-      padding: 2rem;
-      background-color: #f0f8ff;
-      line-height: 1.6;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 20px;
     }
     h1 {
       text-align: center;
       color: #2c3e50;
     }
-    .reagent {
-      margin-bottom: 1rem;
+    .table-container {
+      overflow-x: auto;
+      background: white;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     }
-    .name {
-      font-weight: bold;
-      color: #34495e;
+    table {
+      width: 100%;
+      border-collapse: collapse;
     }
-    .function {
-      margin-left: 1rem;
+    th, td {
+      border: 1px solid #ddd;
+      padding: 10px;
+      text-align: left;
     }
-    .download {
-      display: block;
-      text-align: center;
-      margin-top: 2rem;
-    }
-    .download a {
-      text-decoration: none;
+    th {
       background-color: #3498db;
       color: white;
-      padding: 0.75rem 1.5rem;
-      border-radius: 5px;
     }
-    .download a:hover {
-      background-color: #2980b9;
+    tr:nth-child(even) {
+      background-color: #f9f9f9;
     }
   </style>
 </head>
 <body>
-  <h1>Organic Chemistry Reagents for COMEDK</h1>  <div class="reagent">
-    <div class="name">LiAlH4 (Lithium Aluminium Hydride)</div>
-    <div class="function">- Strong reducing agent; reduces aldehydes, ketones, esters, and carboxylic acids to alcohols</div>
-  </div>
-  <div class="reagent">
-    <div class="name">NaBH4 (Sodium Borohydride)</div>
-    <div class="function">- Milder reducing agent; reduces aldehydes and ketones to alcohols</div>
-  </div>
-  <div class="reagent">
-    <div class="name">PCC (Pyridinium chlorochromate)</div>
-    <div class="function">- Oxidizing agent; oxidizes primary alcohols to aldehydes and secondary alcohols to ketones</div>
-  </div>
-  <div class="reagent">
-    <div class="name">KMnO4 (Potassium permanganate)</div>
-    <div class="function">- Strong oxidizing agent; oxidizes alcohols to carboxylic acids, alkenes to diols or acids</div>
-  </div>
-  <div class="reagent">
-    <div class="name">CrO3 (Chromium trioxide)</div>
-    <div class="function">- Oxidizing agent; Jones reagent with H2SO4, oxidizes alcohols to ketones or acids</div>
-  </div>
-  <div class="reagent">
-    <div class="name">O3 (Ozone)</div>
-    <div class="function">- Ozonolysis; cleaves alkenes to form aldehydes or ketones</div>
-  </div>
-  <div class="reagent">
-    <div class="name">H2/Pd, Pt, Ni</div>
-    <div class="function">- Catalytic hydrogenation; reduces alkenes, alkynes, and nitro groups</div>
-  </div>
-  <div class="reagent">
-    <div class="name">Lindlar’s Catalyst</div>
-    <div class="function">- Poisoned catalyst; reduces alkynes to cis-alkenes</div>
-  </div>
-  <div class="reagent">
-    <div class="name">Na/NH3 (Sodium in liquid ammonia)</div>
-    <div class="function">- Reduces alkynes to trans-alkenes</div>
-  </div>
-  <div class="reagent">
-    <div class="name">SOCl2 (Thionyl chloride)</div>
-    <div class="function">- Converts alcohols to alkyl chlorides</div>
-  </div>
-  <div class="reagent">
-    <div class="name">PBr3 (Phosphorus tribromide)</div>
-    <div class="function">- Converts alcohols to alkyl bromides</div>
-  </div>
-  <div class="reagent">
-    <div class="name">H2SO4 (Sulfuric acid)</div>
-    <div class="function">- Dehydrating agent; forms alkenes from alcohols</div>
-  </div>
-  <div class="reagent">
-    <div class="name">AlCl3 (Aluminium chloride)</div>
-    <div class="function">- Lewis acid; used in Friedel-Crafts reactions</div>
-  </div>
-  <div class="reagent">
-    <div class="name">BH3·THF (Borane-tetrahydrofuran)</div>
-    <div class="function">- Hydroboration-oxidation; converts alkenes to alcohols with anti-Markovnikov selectivity</div>
-  </div>
-  <div class="reagent">
-    <div class="name">mCPBA (meta-Chloroperoxybenzoic acid)</div>
-    <div class="function">- Oxidizes alkenes to epoxides</div>
-  </div>
-  <div class="reagent">
-    <div class="name">NaOEt (Sodium ethoxide)</div>
-    <div class="function">- Strong base; used in E2 eliminations and Claisen condensations</div>
-
-HEALER, [22-04-2025 13:30]
-</div>
-  <div class="reagent">
-    <div class="name">NaNH2 (Sodium amide)</div>
-    <div class="function">- Very strong base; used for deprotonation and alkyne synthesis</div>
-  </div>  <div class="download">
-    <a href="Organic_Chemistry_Reagents_COMEDK.pdf" download>Download as PDF</a>
+  <h1>Organic Chemistry Reagents for COMEDK</h1>
+  <div class="table-container">
+    <table>
+      <thead>
+        <tr>
+          <th>Reagent</th>
+          <th>Function / Use</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>LiAlH<sub>4</sub></td><td>Strong reducing agent (reduces aldehydes, ketones, acids, esters)</td></tr>
+        <tr><td>NaBH<sub>4</sub></td><td>Selective reducing agent (reduces aldehydes, ketones)</td></tr>
+        <tr><td>PCC</td><td>Oxidizes primary alcohols to aldehydes</td></tr>
+        <tr><td>Jones Reagent</td><td>Oxidizes alcohols to acids</td></tr>
+        <tr><td>Grignard Reagent (RMgX)</td><td>Forms alcohols from carbonyl compounds</td></tr>
+        <tr><td>H<sub>2</sub>/Pd or Pt</td><td>Hydrogenation (adds H<sub>2</sub> across double bonds)</td></tr>
+        <tr><td>KMnO<sub>4</sub></td><td>Strong oxidizer; oxidizes alkenes, alcohols</td></tr>
+        <tr><td>O<sub>3</sub> (Ozonolysis)</td><td>Cleaves double bonds to form carbonyls</td></tr>
+        <tr><td>SOCl<sub>2</sub> / PCl<sub>5</sub></td><td>Converts alcohols to alkyl chlorides</td></tr>
+        <tr><td>HBr / HCl</td><td>Addition to alkenes or conversion of alcohols to alkyl halides</td></tr>
+        <tr><td>Conc. H<sub>2</sub>SO<sub>4</sub></td><td>Dehydration of alcohols to alkenes</td></tr>
+        <tr><td>NaNH<sub>2</sub></td><td>Strong base; used to generate alkynyl anions</td></tr>
+        <tr><td>DIBAL-H</td><td>Selective reduction of esters to aldehydes</td></tr>
+        <tr><td>TsCl (Tosyl chloride)</td><td>Makes alcohols better leaving groups</td></tr>
+        <tr><td>NaOEt</td><td>Strong base; used in E2 eliminations</td></tr>
+        <tr><td>Lindlar’s Catalyst</td><td>Reduces alkynes to cis-alkenes</td></tr>
+        <tr><td>Na/NH<sub>3</sub></td><td>Reduces alkynes to trans-alkenes</td></tr>
+        <tr><td>Br<sub>2</sub>/CCl<sub>4</sub></td><td>Addition of bromine across double bonds</td></tr>
+        <tr><td>FeCl<sub>3</sub>, AlCl<sub>3</sub></td><td>Catalysts for electrophilic aromatic substitution</td></tr>
+        <tr><td>HNO<sub>3</sub>/H<sub>2</sub>SO<sub>4</sub></td><td>Nitration of benzene</td></tr>
+      </tbody>
+    </table>
   </div>
 </body>
 </html>
